@@ -1,135 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nef33 TradingView - Indicador Premium</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #0a0a23;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .cta {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .cta a {
-      background-color: #007bff;
-      color: white;
-      padding: 14px 24px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 8px;
-    }
-    .cta a:hover {
-      background-color: #0056b3;
-    }
-    .planes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-    .plan {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 280px;
-      text-align: center;
-    }
-    .plan h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    .plan p {
-      font-size: 1rem;
-    }
-    .plan .precio {
-      font-size: 2rem;
-      margin: 20px 0;
-    }
-    .plan a {
-      background-color: #28a745;
-      color: white;
-      padding: 10px 18px;
-      text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-    }
-    footer {
-      background: #0a0a23;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Indicador Nef33 para TradingView</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        section {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        button {
+            background-color: #2ecc71;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Indicador Nef33 para TradingView</h1>
+        <p>Prueba gratis por 7 días y luego suscríbete para continuar usando nuestro indicador avanzado.</p>
+    </header>
 
-  <header>
-    <h1>Nef33 TradingView Signals</h1>
-    <p>Tu herramienta definitiva para scalping y análisis técnico preciso</p>
-  </header>
+    <section>
+        <h2>¿Por qué elegir Nef33?</h2>
+        <ul>
+            <li>Señales precisas para Forex y Crypto</li>
+            <li>Fácil de usar, incluso para principiantes</li>
+            <li>Actualizaciones constantes</li>
+            <li>Soporte dedicado</li>
+        </ul>
+    </section>
 
-  <section>
-    <h2>¿Qué es este indicador?</h2>
-    <p>El <strong>Indicador Premium Nef33</strong> combina análisis técnico avanzado, detección de zonas clave, volumen, patrones y señales automáticas para ayudarte a tomar decisiones informadas en el mercado. Compatible con todos los mercados y temporalidades.</p>
-    
-    <div class="cta">
-      <a href="#">Probar Gratis 3 Días</a>
-    </div>
-  </section>
+    <section>
+        <h2>Empieza tu prueba gratuita</h2>
+        <p>Activa tu prueba gratuita de 7 días haciendo clic en el botón abajo.</p>
+        <button onclick="alert('¡Prueba activada! Revisa tu email para más detalles.')">Activar prueba gratis</button>
+    </section>
 
-  <section>
-    <h2>Planes de Membresía</h2>
-    <div class="planes">
-      <div class="plan">
-        <h3>Mensual</h3>
-        <p>Ideal para traders que quieren probar a corto plazo.</p>
-        <div class="precio">USD $25</div>
-        <a href="#">Suscribirme</a>
-      </div>
-      <div class="plan">
-        <h3>Trimestral</h3>
-        <p>3 meses de acceso continuo con soporte incluido.</p>
-        <div class="precio">USD $60</div>
-        <a href="#">Suscribirme</a>
-      </div>
-      <div class="plan">
-        <h3>Vitalicio</h3>
-        <p>Un solo pago y accede de por vida.</p>
-        <div class="precio">USD $150</div>
-        <a href="#">Suscribirme</a>
-      </div>
-    </div>
-  </section>
+    <section>
+        <h2>Suscripción</h2>
+        <p>Después del período de prueba, la suscripción cuesta $15 USD al mes.</p>
+        <button onclick="alert('Redirigiendo a pago...')">Suscribirse ahora</button>
+    </section>
 
-  <footer>
-    © 2025 Nef33 Signals. Todos los derechos reservados.
-  </footer>
+    <footer>
+        <p>&copy; 2025 Nef33. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/541122523355" 
+       style="position: fixed; 
+              bottom: 20px; 
+              right: 20px; 
+              background-color: #25D366; 
+              color: white; 
+              border-radius: 50%; 
+              width: 60px; 
+              height: 60px; 
+              text-align: center; 
+              font-size: 30px; 
+              box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+              z-index: 1000; 
+              display: flex; 
+              align-items: center; 
+              justify-content: center; 
+              text-decoration: none;" 
+       target="_blank" 
+       aria-label="Chat por WhatsApp">
+
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           fill="white" 
+           viewBox="0 0 24 24" 
+           width="32px" 
+           height="32px">
+        <path d="M20.52 3.478A11.944 11.944 0 0012 0C5.373 0 0 5.373 0 12c0 2.114.554 4.086 1.52 5.816L0 24l6.364-1.5A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12a11.954 11.954 0 00-3.48-8.522zm-8.517 16.012c-1.71 0-3.34-.46-4.785-1.316l-.343-.202-3.767.887.795-3.65-.223-.374A8.93 8.93 0 013.092 12c0-4.927 4.023-8.95 8.95-8.95 2.395 0 4.645.933 6.335 2.624a8.94 8.94 0 012.616 6.327c0 4.927-4.022 8.95-8.95 8.95zm4.74-6.562l-1.313-.634c-.176-.083-.38-.06-.52.05l-.93.806a.556.556 0 01-.622.092c-1.347-.67-2.23-2.073-2.22-3.64a3.533 3.533 0 01.845-2.254.512.512 0 01.409-.244c.168-.002.328.026.476.076l.64.23c.18.067.306.228.34.41l.183 1.015a.42.42 0 01-.083.324l-1.05 1.59c-.068.103-.045.243.053.317l1.94 1.467c.204.156.503.13.684-.056l.91-.945a.519.519 0 00.076-.566z"/>
+      </svg>
+    </a>
 
 </body>
 </html>
+
